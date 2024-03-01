@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Formulario</title>
+    <link rel="stylesheet" href="../CarpetaCSS/style.css">
+    <link rel="icon" href="../CarpetaIMG/icon.png" type="image/x-icon">
+</head>
+<body id="bodyFormulario">
+    <p id="tituloFormulario">Breaking Bad Que comience el juego!</p>
+    <form id="formulario" name="formulario" action="mailto:raul.rodriguez@proeducaglobal.com" method="post">
+        <fieldset>
+            <legend>Ficha formulario</legend>
+            <fieldset>
+                <legend>Datos personales:</legend>
+                Nombre: <input type="text" name="nombre" id="caja" required>
+                <br>Apellidos: <input type="text" name="apellidos" id="caja" required>
+                <br>Direccion postal: <input type="text" name="dirección" id="caja" placeholder="Calle, Numero, Piso, Codigo Postal, Ciudad">
+                <br>DNI: <input type="text" name="DNI" id="caja">
+                <br>Correo electronico: <input type="email" name="mail" id="caja" required>
+                <br>Seleccione su sexo:
+                <input type="radio" name="sexo" id="caja" value="Hombre"> Hombre
+                <input type="radio" name="sexo" id="caja" value="Mujer"> Mujer
+                <input type="radio" name="sexo" id="caja" value="Indiferente"> Indiferente
+                <br>Indique su fecha de nacimiento:
+                <input type="date" name="fechaNac" id="caja">
+            </fieldset>
+            <fieldset>
+                <legend>Selecciona un personaje favorito:</legend> 
+                <select name="personajes" id="caja">
+                    <option value="1">Jessie Pinkman</option>
+                    <option value="2">Walter White</option>
+                    <option value="3">Saul Goodman</option>
+                    <option value="4">Gustavo Fring</option>
+                    <option value="5">Pollos Hermanos</option>
+                    <option value="6">Otros personajes</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Caja de comentarios</legend>
+                <textarea name="comentarios" id="caja" cols="30" rows="10" placeholder="Escriba aqui sus comentarios..."></textarea>
+            </fieldset>
+        </fieldset>
+        
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+        <input type="file" name="adjuntos" id="" value="archivo_adjunto" accept="*/*">
+    </form>
+    <br>
+    <img id="pinformulario" src="../CarpetaIMG/logoformulario.jpg" alt="">
+</body>
+</html>
